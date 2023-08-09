@@ -1,0 +1,1352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , url(../images/banner.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* #########      utility classes     ########## */
+
+
+.container{
+    max-width: 1550px;
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    background-color: #e65b57;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+
+
+
+/* #######              nav styling         ######### */
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.nav-links li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-links li a{
+   text-decoration: none;
+   color: white;
+   font-size: 2rem;
+   margin-left: 3rem;
+}
+
+.nav-btn{
+    border: none;
+    font-size: 1.7rem;
+    padding: 1.3rem 3rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+ul li .main-page{
+    position: relative;
+}
+
+ul li .main-page::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+/* ####     showcase   styling         ######### */
+
+.showcase-content h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.showcase-content{
+    position: relative;
+    height: 89vh;
+}
+
+.showcase-form{
+    min-width: 80%;
+    background-color: white;
+    border-radius: 50px;
+    padding: 0.5rem 4rem;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
+}
+
+.showcase-form form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.showcase-form form label{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+.showcase-form form input{
+   border: none;
+   outline: none;
+
+}
+
+.location,
+.check-in,
+.check-out,
+.guests{
+    margin-left: 4rem;
+}
+
+.search{
+    display: flex;
+    background-color: #e65b57;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+
+/* ####           exclusives styling        ######### */
+
+.exclusives-content  h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 3rem 0;
+
+}
+
+.row1,.row2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1-images, .row2-images{
+    width: 18%;
+    position: relative;
+}
+.row1-images img, .row2-images img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exclusives-img-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    color: white;
+    text-align: center;
+}
+
+.exclusives-img-content{
+    width: 100%;
+}
+
+.exclusives-img-content h6{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.exclusives-img-content p{
+    font-size: 1.5rem;
+}
+
+.row2{
+    margin-top: 3.5rem;
+}
+
+
+/* ######          tranding places     ##### */
+
+
+.tranding-heading{
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    padding: 3rem 0;
+
+}
+
+.trending-places-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending-places-images{
+    width: 24%;
+}
+.trending-places-images img{
+    width: 100%;
+    border-radius: 15px;
+}
+.trending-places-images p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* ####    sharing  styling      ######## */
+
+.sharing-container{
+    background-image: linear-gradient(to right ,#3f2321cb , transparent) ,url(../images/banner-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 8rem;
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+    padding: 2rem 10rem ;
+}
+
+.sharing-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sharing-container h1{
+        color: white;
+        font-size: 5rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        line-height: 60px;
+}
+.sharing-container p{
+        color: white;
+        font-size: 2rem;
+        text-transform: capitalize;
+        line-height: 25px;
+        margin-top: 1rem;
+}
+
+
+
+/* ####             travel stories           ######## */
+
+
+.stories-container h1{
+    padding: 3rem 0;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+
+}
+
+.stories-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.storie-img-1{
+    height: 45vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/story-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 32.33333333%;
+    position: relative;
+}
+.storie-img-2{
+    height: 45vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/story-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 32.33333333%;
+    position: relative;
+}
+.storie-img-3{
+    height: 45vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../images/story-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 32.33333333%;
+    position: relative;
+}
+.storie-img img{
+    width: 100%;
+}
+
+.storie-discription{
+    width: 100%;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateX(-50% );
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.Travel-storie-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+
+.storie-btn{
+    font-size: 2.5rem;
+    padding: 2rem 10rem;
+    border-radius: 40px;
+}
+
+
+
+
+
+
+
+/* ########      about-us styling         ########## */
+
+
+.about-us-container h6{
+    font-size:3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(84, 84, 84);
+
+}
+
+.about-content {
+    margin: 3rem;
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* #####      icon styling      ####### */
+
+.icon-container{
+    margin-top: 13rem;
+    display: flex;
+    justify-content: center;
+}
+.icon-container p{
+   font-size: 4rem;
+   font-weight: 700;
+   color: rgb(76, 76, 76);
+   margin-top: 1.1rem;
+   margin-left: 1.5rem;
+   cursor: pointer;
+
+}
+.icon-container i{
+    margin: 2rem 2rem;
+    color: rgb(76, 76, 76);
+    cursor: pointer;
+
+}
+
+/* #####    footer  styling          ########## */
+
+.footer{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(76, 76, 76);
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content p{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1450px){
+    .exclusives-img-content h6{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px){
+    
+
+    /* ######     show case  styling           ############ */
+
+    .showcase-content h1{
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .showcase-form{
+       min-width: 40%;
+    }
+
+    .showcase-form form label{
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height:30px;
+    }
+    .showcase-form form input{
+       border: none;
+       outline: none;
+       width: 130px;
+    }
+
+
+    /* #########           EXCLUSIVES  styling           ########### */
+
+    .row1,.row2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row1-images,.row2-images{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .exclusives-img-content h6{
+        font-size: 5rem;
+    }
+    .exclusives-img-content p{
+        font-size: 2rem;
+    }
+
+
+     /* #########           TRANDING PLACES  styling           ########### */
+    
+    .trending-places-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trending-places-images{
+        width: 95%;
+        margin-bottom: 1.5rem;
+    }
+
+
+ /* ########       Travellers Stories           #############  */
+
+    .storie-discription p{
+        font-size: 2rem;
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width:700px){
+
+    /* ######      showcase styling       ###### */
+
+    .nav-content{
+        width: 100%px;
+    }
+    .nav-content img{
+        width: 80px;
+    }
+    .nav-links li a{
+    font-size: 1rem;
+   
+    }
+    .nav-links li {
+    display: block;
+    margin-bottom: 1.3rem;
+    margin-right: 1rem;
+    }
+
+    .nav-content button{
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+    .showcase-form {      
+        border-radius: 10px;
+        width: 60%;
+        height: 350px;
+        position: relative;
+        margin-bottom: 50rem;
+        height: 40%;
+    }
+
+    .showcase-form form{
+        display: flex;
+        flex-direction: column;  
+        justify-content: space-between;
+        height: 80%;
+        
+    }
+    .showcase-form .location{
+       padding: 0;
+       margin: 0;
+        
+    }
+
+    .search{
+        align-self: flex-end;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 17%;
+        height: 15%;
+    }
+
+    /* .search::before{
+        content:'' ;
+        width: 200%;
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        bottom: 60px;
+    } */
+
+
+
+
+    .exclusives-img-content h6{
+        font-size: 5rem;
+    }
+
+
+    /* #######        Travellers Stories          ########### */
+    .stories-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .storie-img-1{
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+    .storie-img-2{
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+    .storie-img-3{
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width:620px){
+
+    .sharing-container{
+        padding: 1rem 3.5rem;
+    }
+    
+    .exclusives-img-content h6{
+        font-size: 4rem;
+    }
+    .showcase-form{
+        height: 40%;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width:550px){
+    .showcase-form{
+        width: 70%;
+    }
+
+ 
+
+    .showcase-content h1{
+        width: 100%;
+        font-size: 3rem;
+    }
+
+
+    .exclusives-img-content h6{
+        font-size: 3rem;
+    }
+
+    .footer p{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:400px){
+
+    .showcase-form{
+        width: 90%;
+    }
+    .storie-btn{
+        font-size: 2rem;
+        width: 85%;
+        padding: 2rem 0;
+    }
+
+    .sharing-container h1{
+        width: 100%;
+        font-size: 3rem;
+        line-height: 35px;
+    }
+    .sharing-container p{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##########         SECOND  PAGE            ############ */
+
+#nav-black ul li a{
+    color: black;
+}
+#nav-black img{
+    width: 180px;
+}
+
+#nav-btn{
+    background-color: #e65b57;
+    color: white;
+}
+
+ul li .second-page{
+    position: relative;
+}
+
+ul li .second-page::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.lft-col{
+    width: 65%;
+}
+.lft-col p{
+  font-size: 1.5rem;
+}
+.lft-col .house-heading{
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+}
+.right-col{
+    width: 27%;
+    border: 1px solid #000000;
+    margin-top: 7rem;
+    padding: 2rem;
+    height: 100%;
+}
+
+.left-col-row1{
+    display: flex;
+    margin: 2.5rem 0;
+}
+
+.house-img{
+    width: 40%;
+}
+
+
+.house-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+.house-info{
+    margin-left: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+.house-info h1{
+    font-size: 2.5rem;
+}
+.house-info i{
+    margin-top: 1rem;
+    color: #e65b57;
+}
+
+.house-price{
+    align-self: flex-end;
+}
+.house-price p{
+    font-size: 1.7rem;
+}
+
+.filter-row p{
+    display: inline;
+}
+
+.filter-row {
+    display:flex; 
+    justify-content: space-between;
+    margin: 1rem 0;
+    
+}
+
+.right-col h1{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.right-col  h6{
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: 500;
+}
+
+.check p{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    margin-left: 1rem;
+}
+.check input{
+   padding: 1rem 1.5rem;
+}
+
+.number{
+    font-size: 1.7rem;
+}
+
+
+.filter-link{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.5rem;
+}
+
+.filter-link a{
+   text-decoration: none;
+   font-size: 1.7rem;
+   text-transform: capitalize;
+}
+
+.pagination{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.pagination img{
+    width: 15px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.right-arrow{
+    transform: rotate(180deg);
+}
+
+.pagination span{
+    margin: 10px 25px;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+   
+}
+
+
+.span1{
+  padding: 0.5rem 1.5rem;
+    background: #333;
+    color: #fff;
+    border-radius: 30px;
+   
+}
+
+
+
+
+
+@media (max-width:700px) {
+
+    #nav-black{
+        width: 100%px;
+    }
+    #nav-black img{
+        width: 80px;
+    }
+    .nav-links li a{
+    font-size: 1rem;
+   
+    }
+    .nav-links li {
+    display: block;
+    margin-bottom: 1.3rem;
+    margin-right: 1rem;
+    }
+
+    #nav-black button{
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-col-row1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lft-col{
+        width: 100%;
+    }
+
+    .house-img img{
+        width: 95%;
+    }
+    .house-img {
+        width: 100%;
+    }
+
+    .lft-col h1{
+        font-size: 1.7rem;
+        font-weight: 800;
+    }
+
+    .right-col{
+        width: 85%;
+    }
+
+    .house-heading{
+        font-size: 50rem;
+    }
+
+    .pagination span{
+        margin: 10px 7px;
+    }
+    .pagination img{
+        width: 15px;
+        margin: 0px 7px;
+        
+    }
+    .footer p{
+        font-size: 1.5rem;
+    }
+
+    .icon-container i{
+        font-size: 3.3rem;
+    }
+        
+    .icon-container p{
+        font-size: 3.5rem;
+    }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ######          3rd  page        ########## */
+
+
+ul li .third-page{
+    position: relative;
+}
+
+ul li .third-page::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.wenge{
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+}
+i{
+    color: #e65b57;
+    margin-top: 2rem;
+}
+
+.reviews-location{
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+
+.wenge-content{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left-column{
+    width: 67%;
+}
+.left-column img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.wenge-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    
+}
+
+.wenge-img{
+    width: 45%;
+}
+.wenge-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.day-content{
+     margin-top: 3rem;
+     display: flex;
+     justify-content: space-between;
+}
+
+.lft-side{
+    width: 75%;
+}
+.lft-side h1{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.lft-side p{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    margin-bottom: 3.5rem;
+}
+.right-side {
+   display: flex;
+    
+}
+.right-side h1{
+    font-size: 2.5rem;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+    
+}
+
+.shocase-3{
+    margin-top: 5rem;
+   
+}
+
+.showcase-3-content{
+    padding: 3rem 8rem;
+    box-shadow: 0px 0px 30px  rgba(0, 0, 0, 0.476);
+}
+
+.showcase-3-content form{
+    display: flex;
+    justify-content: space-between;
+}
+.showcase-3-content .form-left{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase-3-content form .form-left div label{
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.showcase-3-content form .form-left div input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-top: 0.5rem ;
+}
+
+.showcase-3-btn button{
+    border: none;
+    background-color: #e65b57;
+    color: #fff;
+    cursor: pointer;
+    padding: 2rem 9rem;
+    font-size: 2.3rem;
+    border-radius: 10px;
+}
+
+
+.details-content{
+    margin-top: 7rem;
+    width: 50%;
+}
+
+.details-items li{
+    list-style: none;
+    margin: 3rem 0;
+}
+.details-items li h6{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #393939;
+    text-transform: capitalize;
+    margin-left: 2rem;
+
+}
+.details-items li p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-left: 4.7rem;
+    
+}
+
+.detail-para{
+    font-size: 1.7rem;
+    padding: 1rem 3rem 1rem 0rem;
+    margin: 3rem 0;
+}
+
+.map-hd{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 4rem 0;
+}
+
+.map-img{
+    height: 50vh;
+    width: 100%;
+    background-image: url(../images/k8GpG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map-content h6{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.map-content p{
+    font-size: 1.5rem;
+    margin-bottom: 4rem ;
+}
+
+.hr{
+    width: 50%;
+}
+
+.testimonial-container{
+    margin-top: 4rem;
+}
+
+.testimonial-content{
+    width: 50%;
+    display: flex;
+}
+
+.testimonial-img{
+    width: 13%;
+}
+
+.testimonial-img img{
+   width: 100%;
+   border-radius: 60px;
+}
+
+.testimonial-discription{
+    margin: auto 1rem;
+}
+
+.testimonial-discription h6{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.testimonial-discription p{
+    display: inline;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.testimonial-btn{
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem 3rem ;
+    margin: 2rem 0;
+    background-color: #e65b57;
+    border: 1px solid black;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+@media (max-width:700px){
+    .reviews-location{
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
+    .india{
+        margin-left: 2.5rem;
+    }
+
+    .wenge-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-column{
+        width: 100%;
+        display: flex;
+       justify-content: center;
+    }
+    .left-column img{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .lft-side h1{
+        font-size: 1.5rem;
+    }
+    .right-side h1{
+        font-size: 1.5rem;
+    }
+    .showcase-3-content form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .showcase-3-content form .form-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .showcase-3-content{
+        padding: 1rem 2rem;
+        box-shadow: 0px 0px 30px  rgba(0, 0, 0, 0.476);
+        height: 250px;
+    }
+
+    .showcase-3-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .showcase-3-btn button{
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .details-content{
+        width: 94%;
+    }
+
+    .details-items li p{
+        font-size: 1.3rem;
+    }
+
+    .detail-para{
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .testimonial-content{
+        width: 90%;
+    }
+
+    .testimonial-img{
+        width: 500px;
+    }
+    .testimonial-img img{
+        border-radius: 100px;
+    }
+
+    .testimonial-discription h6{
+        font-size: 1.7rem;
+    }
+    .testimonial-discription i{
+        margin-bottom: 1rem;
+    }
+    .hr{
+        width: 100%;
+    }
+    .footer p{
+        font-size: 1.5rem;
+    }
+
+    .icon-container i{
+        font-size: 3.3rem;
+    }
+        
+    .icon-container p{
+        font-size: 3.5rem;
+    }
+
+
+    
+}
